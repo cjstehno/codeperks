@@ -1,0 +1,37 @@
+/*
+ * Copyright 2009 Christopher J. Stehno
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+package com.stehno.codeperks.io;
+
+import java.io.IOException;
+import java.io.OutputStream;
+
+/**
+ * Factory used to create OutputSteams suitable for use by template methods.
+ *
+ * @author Christopher J. Stehno (chris@stehno.com)
+ *
+ * @param <O> the type of OutputStream to be created.
+ */
+public interface OutputStreamFactory<O extends OutputStream> {
+
+	/**
+	 * Creates a properly configured OutputSteam of the specified type.
+	 *
+	 * @return a configured OutputStream of the given type
+	 * @throws IOException if there is a problem creating the OutputStream
+	 */
+	O outputStream() throws IOException;
+}
