@@ -4,7 +4,7 @@
   <artifactId>codeperks</artifactId>
   <name>CodePerks</name>
   <version>0.0.2-SNAPSHOT</version>
-  <description>Common reusable code.</description>
+  <description>Common reusable java code.</description>
   <inceptionYear>2009</inceptionYear>
   <url>http://github.com/cjstehno/codeperks</url>
     <developers>

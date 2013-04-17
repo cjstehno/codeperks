@@ -88,7 +88,10 @@ public class DateRangeTest {
 
 	@Test
 	public void to_string(){
-		assertEquals("[DateRange: start='Sun Jan 01 00:00:00 CST 2006' end='Wed Mar 01 00:00:00 CST 2006']", range.toString());
+        final String startPart = "[DateRange: start='Sun Jan 01 00:00:00 ";
+        final String endPart = " 2006' end='Wed Mar 01 00:00:00 ";
+        final String str = range.toString();
+        assertTrue( str.contains(startPart) && str.contains(endPart) );
 	}
 
 	@Test
